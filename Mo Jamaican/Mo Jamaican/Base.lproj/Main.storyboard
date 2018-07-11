@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1bI-Dv-Rcs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MO JAMAICAN-->
+        <scene sceneID="cqN-hn-UDE">
+            <objects>
+                <viewController id="d24-9O-ZWO" customClass="CategoriesVC" customModule="Mo_Jamaican" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jR9-My-8lJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTi-ka-ihW">
+                                <rect key="frame" x="16" y="20" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8xz-dX-wve">
+                                <rect key="frame" x="0.0" y="49" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCells" rowHeight="177" id="i8D-Ot-fbR" customClass="CategoryCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="177"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i8D-Ot-fbR" id="wqD-iO-Ygn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="176.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Groceries" translatesAutoresizingMaskIntoConstraints="NO" id="7Ye-zW-9w7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="176.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GROCERIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9F-iW-lZV">
+                                                    <rect key="frame" x="97" y="66.5" width="181" height="44"/>
+                                                    <color key="backgroundColor" white="0.67000000000000004" alpha="0.64528499119718308" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="h9F-iW-lZV" firstAttribute="centerY" secondItem="wqD-iO-Ygn" secondAttribute="centerY" id="F8c-hD-opq"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Ye-zW-9w7" secondAttribute="trailing" id="LDd-0W-fly"/>
+                                                <constraint firstAttribute="bottom" secondItem="7Ye-zW-9w7" secondAttribute="bottom" id="MIH-ri-gSu"/>
+                                                <constraint firstItem="7Ye-zW-9w7" firstAttribute="leading" secondItem="wqD-iO-Ygn" secondAttribute="leading" id="NQs-FO-3Dw"/>
+                                                <constraint firstItem="h9F-iW-lZV" firstAttribute="centerX" secondItem="wqD-iO-Ygn" secondAttribute="centerX" id="i4S-rp-SEP"/>
+                                                <constraint firstItem="7Ye-zW-9w7" firstAttribute="top" secondItem="wqD-iO-Ygn" secondAttribute="top" id="vIB-kv-HkJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8xz-dX-wve" firstAttribute="trailing" secondItem="XqU-z7-bAW" secondAttribute="trailing" id="Jg7-td-uTA"/>
+                            <constraint firstItem="8xz-dX-wve" firstAttribute="bottom" secondItem="XqU-z7-bAW" secondAttribute="bottom" id="Oj8-75-1GU"/>
+                            <constraint firstItem="qTi-ka-ihW" firstAttribute="top" secondItem="XqU-z7-bAW" secondAttribute="top" constant="20" id="YEU-3d-5XN"/>
+                            <constraint firstItem="8xz-dX-wve" firstAttribute="leading" secondItem="XqU-z7-bAW" secondAttribute="leading" id="e0F-gu-2fU"/>
+                            <constraint firstItem="8xz-dX-wve" firstAttribute="top" secondItem="qTi-ka-ihW" secondAttribute="bottom" constant="8" id="gE0-oh-W6M"/>
+                            <constraint firstItem="qTi-ka-ihW" firstAttribute="leading" secondItem="XqU-z7-bAW" secondAttribute="leading" constant="16" id="t7V-3N-aVn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XqU-z7-bAW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MO JAMAICAN" id="wdU-lh-OV8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcZ-Gz-HO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6k5-jM-u0R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1bI-Dv-Rcs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="5nq-ki-UvZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.28627450980000002" green="0.59999999999999998" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d24-9O-ZWO" kind="relationship" relationship="rootViewController" id="Qbd-mm-ITd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVf-eh-CcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840.8" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Groceries" width="360" height="240"/>
+    </resources>
+</document>
